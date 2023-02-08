@@ -33,6 +33,10 @@ File Read
 Delete File On Runtime
 
     ::/file/delete
+   
+Add Variable
+
+    ::/create/variable/name/line_num/value/line_num
 
 # Special Thanks to
 
