@@ -3,6 +3,8 @@ A Language I made in Python
 
 Warning : Alot of Bugs
 
+Hard to Learn
+
 # Commands:
 Start Command ) 
 
