@@ -127,16 +127,12 @@ elif line2 == "::/create/variable/filename/line3/variablename/line4":
     f = open(line3, "w")
     f.write(line4)
     f.close()
-    with open(line3, 'w') as f:
-        f.write(line4)
 
 elif line2 == "::/create/variable/filename/line4/variablename/line3":
     print("Made File")
     f = open(line4, "w")
     f.write(line3)
     f.close()
-    with open(line4, 'w') as f:
-        f.write(line3)
 
 #line2 adding variable error checking
 elif line2 == "::/create/variable/filename/line1/variablename/line3":
