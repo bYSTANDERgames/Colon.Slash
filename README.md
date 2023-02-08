@@ -3,6 +3,8 @@ A Language I made in Python
 
 ! Warning : Alot of Bugs
 
+If File says nothing that means there is error in your code
+
 Hard to Learn
 
 # Commands:
