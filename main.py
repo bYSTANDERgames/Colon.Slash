@@ -109,9 +109,6 @@ elif line2 == "::/file/write/name/line2/content/line1":
 elif line2 == " ":
     print("line2.did_not_execute")
 
-elif line2 not in line2argsforline3 and line2 not in line2argsforline4 and line2 not in line2args:
-    print("line2.error(command not recognised)!")
-
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
     f = open(line4, "r")
@@ -149,8 +146,6 @@ elif line3 == "::/file/write/name/line2/content/line1":
 elif line3 == " ":
     print("line3.did_not_execute")
 
-else:
-    print("line3.error(command not recognised)!")
 
 #line4 commands
 if line4 not in line2argsforline4 and line4 == "::/file/read/name/line3":
@@ -188,6 +183,3 @@ elif line4 == "::/file/write/name/line2/content/line1":
     print("line4.error(you can only execute this command on line2!)")
 elif line4 == " ":
     print("line4.did_not_execute")
-
-else:
-    print("line4.error(command not recognised)!")
