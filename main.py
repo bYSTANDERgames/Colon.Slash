@@ -117,7 +117,7 @@ elif line2 == "::/file/delete":
     file_path = input("File Path : ")
     if os.path.isfile(file_path):
         os.remove(file_path)
-    print("File has been deleted")
+    print(f"{file_path} has been deleted")
 
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
