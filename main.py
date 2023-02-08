@@ -85,8 +85,8 @@ elif line2 == "::/file/write/name/line4/content/line3":
     f.write(line3)
     f.close()
 
-line2argsforline3 = ["::/file/write/name/line1/content/line3", "::/file/write/name/line1/content/line4", "::/file/write/name/line2/content/line3", "::/file/write/name/line2/content/line4", "::/file/write/name/line3/content/line2", "::/file/write/name/line4/content/line2", "::/file/write/name/line1/content/line2", "::/file/write/name/line2/content/line1", "::/file/read/name/line3",]
-line2argsforline4 = ["::/file/write/name/line1/content/line3", "::/file/write/name/line1/content/line4", "::/file/write/name/line2/content/line3", "::/file/write/name/line2/content/line4", "::/file/write/name/line3/content/line2", "::/file/write/name/line4/content/line2", "::/file/write/name/line1/content/line2", "::/file/write/name/line2/content/line1", "::/file/read/name/line4"]
+line2argsforline3 = ["::/file/write/name/line1/content/line3", "::/file/write/name/line1/content/line4", "::/file/write/name/line2/content/line3", "::/file/write/name/line2/content/line4", "::/file/write/name/line3/content/line2", "::/file/write/name/line4/content/line2", "::/file/write/name/line1/content/line2", "::/file/write/name/line2/content/line1", "::/file/read/name/line3", "::/create/variable/filename/line3/variablename/line4", "::/create/variable/filename/line4/variablename/line3"]
+line2argsforline4 = ["::/file/write/name/line1/content/line3", "::/file/write/name/line1/content/line4", "::/file/write/name/line2/content/line3", "::/file/write/name/line2/content/line4", "::/file/write/name/line3/content/line2", "::/file/write/name/line4/content/line2", "::/file/write/name/line1/content/line2", "::/file/write/name/line2/content/line1", "::/file/read/name/line4", "::/create/variable/filename/line3/variablename/line4", "::/create/variable/filename/line4/variablename/line3"]
 line2args = ["::/file/write/runtime", "::/file/write/content/line3/name/line4"]
 
 #error checking line2
@@ -120,6 +120,36 @@ elif line2 == "::/file/delete":
     print(f"{file_path} has been deleted")
     if file_path == " ":
         print("nothing to delete")
+
+#line2 adding variable and then adding to file
+elif line2 == "::/create/variable/filename/line3/variablename/line4":
+    with open(line3, 'w') as f:
+        f.write(line4)
+elif line2 == "::/create/variable/filename/line4/variablename/line3":
+    with open(line4, 'w') as f:
+        f.write(line3)
+
+#line2 adding variable error checking
+elif line2 == "::/create/variable/filename/line1/variablename/line3":
+    print("line2.error(cannot open file with name line1)")
+elif line2 == "::/create/variable/filename/line1/variablename/line2":
+    print("line2.error(cannot open file with name line1)")
+    print("line2.error(cannot make variable with name line2)")
+elif line2 == "::/create/variable/filename/line1/variablename/line1":
+    print("line2.error(cannot open file with name line1)")
+    print("line2.error(cannot make variable with name line1)")
+elif line2 == "::/create/variable/filename/line1/variablename/line4":
+    print("line2.error(cannot open file with name line1)")
+
+#global adding variable error checking
+elif line2 == "::/create/variable/filename/line3/variablename/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/create/variable/filename/line3/variablename/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+elif line2 == "::/create/variable/filename/line4/variablename/line3" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/create/variable/filename/line4/variablename/line3" and line4 == " ":
+    print("line2.error(nothing in line4!)")
 
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
