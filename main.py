@@ -125,26 +125,26 @@ elif line2 == "::/file/delete":
 elif line2 == "::/create/variable/filename/line3/variablename/line4":
     print("Made File")
     f = open(line3, "w")
-    line4_w = [line4, "= "]
-    f.write(line4_w)
+    f.write(line4)
     f.close()
 
 elif line2 == "::/create/variable/filename/line4/variablename/line3":
     print("Made File")
     f = open(line4, "w")
-    line3_w = [line3, "= "]
-    f.write(line3_w)
+    f.write(line3)
     f.close()
 
 #line2 adding variable value
 elif line2 == "::/create/variablevalue/filename/line3/variablevalue/line4":
     with open(line3, 'a') as f:
-        f.write('\n'.join(line4))
+        line4_w = ["= ", line4]
+        f.write('\n'.join(line4_w))
     print("Edited")
 
 elif line2 == "::/create/variablevalue/filename/line4/variablevalue/line3":
     with open(line4, 'a') as f:
-        f.write('\n'.join(line3))
+        line3_w = ["= ", line3]
+        f.write('\n'.join(line3_w))
     print("Edited")
 
 #line2 adding variable error checking
