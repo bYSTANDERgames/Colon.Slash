@@ -122,42 +122,30 @@ elif line2 == "::/file/delete":
         print("nothing to delete")
 
 #line2 adding variable and then adding to file
-elif line2 == "::/create/variable/filename/line3/variablename/line4":
+elif line2 == "::/create/variable/name/line3/value/line4":
     print("Made File")
+    line4_w = (f"{line3} = {line4}")
     f = open(line3, "w")
-    f.write(line4)
+    f.write(line4_w)
     f.close()
 
-elif line2 == "::/create/variable/filename/line4/variablename/line3":
+elif line2 == "::/create/variable/name/line4/value/line3":
     print("Made File")
+    line3_w = (f"{line4} = {line3}")
     f = open(line4, "w")
-    f.write(line3)
+    f.write(line3_w)
     f.close()
-
-#line2 adding variable value
-elif line2 == "::/create/variablevalue/filename/line3/variablevalue/line4":
-    with open(line3, 'a') as f:
-        line4_w = ["= ", " ", line4]
-        f.write(''.join(line4_w))
-    print("Edited")
-
-elif line2 == "::/create/variablevalue/filename/line4/variablevalue/line3":
-    with open(line4, 'a') as f:
-        line3_w = ["= ", " ", line3]
-        f.write(''.join(line3_w))
-    print("Edited")
 
 #line2 adding variable error checking
-elif line2 == "::/create/variable/filename/line1/variablename/line3":
-    print("line2.error(cannot open file with name line1)")
-elif line2 == "::/create/variable/filename/line1/variablename/line2":
-    print("line2.error(cannot open file with name line1)")
-    print("line2.error(cannot make variable with name line2)")
-elif line2 == "::/create/variable/filename/line1/variablename/line1":
-    print("line2.error(cannot open file with name line1)")
+elif line2 == "::/create/variable/name/line1/value/line3":
     print("line2.error(cannot make variable with name line1)")
-elif line2 == "::/create/variable/filename/line1/variablename/line4":
-    print("line2.error(cannot open file with name line1)")
+elif line2 == "::/create/variable/name/line1/value/line4":
+    print("line2.error(cannot make variable with name line1)")
+elif line2 == "::/create/variable/name/line1/value/line2":
+    print("line2.error(cannot make variable with name line1)")
+    print("line2.error(cannot make variable value with value line2)")
+elif line2 == "::/create/variable/name/line1/value/line1":
+    print("line2.error(cannot make variable with name line1)")
 
 #global adding variable error checking
 elif line2 == "::/create/variable/filename/line3/variablename/line4" and line3 == " ":
@@ -167,28 +155,6 @@ elif line2 == "::/create/variable/filename/line3/variablename/line4" and line4 =
 elif line2 == "::/create/variable/filename/line4/variablename/line3" and line3 == " ":
     print("line2.error(nothing in line3!)")
 elif line2 == "::/create/variable/filename/line4/variablename/line3" and line4 == " ":
-    print("line2.error(nothing in line4!)")
-
-#line2 adding variable values error checking
-elif line2 == "::/create/variablevalue/filename/line1/variablevalue/line3":
-    print("line2.error(cannot open file with name line1)")
-elif line2 == "::/create/variablevalue/filename/line1/variablevalue/line2":
-    print("line2.error(cannot open file with name line1)")
-    print("line2.error(cannot make variablevalue with value line2)")
-elif line2 == "::/create/variablevalue/filename/line1/variablevalue/line1":
-    print("line2.error(cannot open file with name line1)")
-    print("line2.error(cannot make variablevalue with value line1)")
-elif line2 == "::/create/variablevalue/filename/line1/variablevalue/line4":
-    print("line2.error(cannot open file with name line1)")
-
-#global adding variable value error checking
-elif line2 == "::/create/variablevalue/filename/line3/variablevalue/line4" and line3 == " ":
-    print("line2.error(nothing in line3!)")
-elif line2 == "::/create/variablevalue/filename/line3/variablevalue/line4" and line4 == " ":
-    print("line2.error(nothing in line4!)")
-elif line2 == "::/create/variablevalue/filename/line4/variablevalue/line3" and line3 == " ":
-    print("line2.error(nothing in line3!)")
-elif line2 == "::/create/variablevalue/filename/line4/variablevalue/line3" and line4 == " ":
     print("line2.error(nothing in line4!)")
 
 #line3 commands
