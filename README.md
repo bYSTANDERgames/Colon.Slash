@@ -14,7 +14,7 @@ End Command
 
     ::/
     
-File Write In RunTime
+File Write On RunTime
 
     ::/file/write/runtime
 
@@ -28,6 +28,6 @@ File Read
 
     ::/file/read/name/line_num
     
-Delete File
+Delete File On Runtime
 
     ::/file/delete
