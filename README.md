@@ -11,6 +11,10 @@ Start Command )
 End Command ) 
 
     ::/
+    
+File Write In RunTime )
+
+    ::/file/write/runtime
 
 File Write ) 
 
