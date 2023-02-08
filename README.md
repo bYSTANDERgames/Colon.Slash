@@ -6,24 +6,24 @@ Warning : Alot of Bugs
 Hard to Learn
 
 # Commands:
-Start Command ) 
+Start Command 
 
     :/
 
-End Command ) 
+End Command 
 
     ::/
     
-File Write In RunTime )
+File Write In RunTime
 
     ::/file/write/runtime
 
-File Write ) 
+File Write 
 
     ::/file/write/name/line_num/content/line_num
     or
     ::/file/write/content/line_num/name/line_num
              
-File Read ) 
+File Read 
 
     ::/file/read/name/line_num
