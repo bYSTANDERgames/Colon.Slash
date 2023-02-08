@@ -1,7 +1,7 @@
 # Colon.Slash
 A Language I made in Python
 
-Warning : Alot of Bugs
+! Warning : Alot of Bugs
 
 Hard to Learn
 
