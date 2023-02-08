@@ -27,3 +27,7 @@ File Write
 File Read 
 
     ::/file/read/name/line_num
+    
+Delete File
+
+    ::/file/delete
