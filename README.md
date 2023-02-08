@@ -4,12 +4,20 @@ A Language I made in Python
 Warning : Alot of Bugs
 
 # Commands:
-Start Command ) :/
+Start Command ) 
 
-End Command ) ::/
+    :/
 
-File Write ) ::/file/write/name/line_num/content/line_num
+End Command ) 
 
-             ::/file/write/content/line_num/name/line_num
+    ::/
+
+File Write ) 
+
+    ::/file/write/name/line_num/content/line_num
+    or
+    ::/file/write/content/line_num/name/line_num
              
-File Read ) ::/file/read/name/line_num
+File Read ) 
+
+    ::/file/read/name/line_num
