@@ -18,6 +18,8 @@ if line1 == ":/":
 elif line1 == "::/":
     print("line1:File Stopped!")
     exit()
+elif line1 == "help":
+    print("https://github.com/bYSTANDERgames/Colon.Slash/blob/main/README.md")
 
 #line1 error checking
 elif line1 == "::/file/write":
@@ -109,6 +111,14 @@ elif line2 == "::/file/write/name/line2/content/line1":
 elif line2 == " ":
     print("line2.did_not_execute")
 
+#line2 deleting files
+elif line2 == "::/file/delete":
+    import os
+    file_path = input("File Path : ")
+    if os.path.isfile(file_path):
+        os.remove(file_path)
+    print("File has been deleted")
+
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
     f = open(line4, "r")
@@ -145,6 +155,8 @@ elif line3 == "::/file/write/name/line2/content/line1":
     print("line3.error(you can only execute this command on line2!)")
 elif line3 == " ":
     print("line3.did_not_execute")
+elif line3 == "::/file/delete":
+    print("line3.error(you can only execute this command on line2!)")
 
 
 #line4 commands
@@ -183,3 +195,5 @@ elif line4 == "::/file/write/name/line2/content/line1":
     print("line4.error(you can only execute this command on line2!)")
 elif line4 == " ":
     print("line4.did_not_execute")
+elif line4 == "::/file/delete":
+    print("line4.error(you can only execute this command on line2!)")
