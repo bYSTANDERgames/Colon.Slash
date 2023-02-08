@@ -136,16 +136,14 @@ elif line2 == "::/create/variable/filename/line4/variablename/line3":
 
 #line2 adding variable value
 elif line2 == "::/create/variablevalue/filename/line3/variablevalue/line4":
+    with open(line3, 'a') as f:
+    f.write('\n'.join(line4))
     print("Edited")
-    f = open(line3, "w")
-    f.write(line4)
-    f.close()
 
 elif line2 == "::/create/variablevalue/filename/line4/variablevalue/line3":
+    with open(line4, 'a') as f:
+    f.write('\n'.join(line3))
     print("Edited")
-    f = open(line4, "w")
-    f.write(line3)
-    f.close()
 
 #line2 adding variable error checking
 elif line2 == "::/create/variable/filename/line1/variablename/line3":
