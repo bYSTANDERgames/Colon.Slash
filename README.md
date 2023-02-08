@@ -5,8 +5,6 @@ A Language I made in Python
 
 If File says nothing that means there is error in your code
 
-Hard to Learn
-
 # Commands:
 Start Command 
 
