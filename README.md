@@ -1,5 +1,5 @@
 # Colon.Slash
-A Language I made in Python
+A Language I made over Python. Four Lines.
 
 ! Warning : Alot of Bugs
 
