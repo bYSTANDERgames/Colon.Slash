@@ -14,6 +14,10 @@ End Command / Trigger
 
     ::/
     
+Print a Line
+
+    ::/print/line_num
+    
 File Write On RunTime
 
     ::/file/write/runtime
