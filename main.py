@@ -174,6 +174,35 @@ elif line2 == "::/create/variable/name/line4/value/line3" and line4 == " ":
     print("line2.error(nothing in line4!)")
 
 #line2 arithmatic 
+elif line2 == "::/arithmetic/+":
+    number1 = input(int("Number 1 : "))
+    number2 = input(int("Number 2 : "))
+    print(number1+number2)
+elif line2 == "::/arithmetic/-":
+    number1 = input(int("Number 1 : "))
+    number2 = input(int("Number 2 : "))
+    print(number1-number2)
+elif line2 == "::/arithmetic//":
+    number1 = input(int("Number 1 : "))
+    number2 = input(int("Number 2 : "))
+    print(number1/number2)
+elif line2 == "::/arithmetic/*":
+    number1 = input(int("Number 1 : "))
+    number2 = input(int("Number 2 : "))
+    print(number1*number2)
+elif line2 == "::/arithmetic/%":
+    number1 = input(int("Number 1 : "))
+    number2 = input(int("Number 2 : "))
+    print(number1%number2)
+elif line2 == "::/arithmetic/**":
+    number1 = input(int("Number 1 : "))
+    number2 = input(int("Number 2 : "))
+    print(number1**number2)
+elif line2 == "::/arithmetic///":
+    number1 = input(int("Number 1 : "))
+    number2 = input(int("Number 2 : "))
+    print(number1//number2)
+
 elif line2 == "::/arithmetic/+/number1/line3/number2/line4":
     print(int(line3) + int(line4))
 elif line2 == "::/arithmetic/-/number1/line3/number2/line4":
@@ -239,6 +268,17 @@ elif line2 == "::/arithmetic////number1/line3/number2/line4" and line3 == " ":
 elif line2 == "::/arithmetic////number1/line3/number2/line4" and line4 == " ":
     print("line2.error(nothing in line4!)")
 
+#line2 get input on runtime
+if line2 == "::/create/input/str":
+    input1_r = input(">> ")
+elif line2 == "::/create/input/int":
+    input1_r = input(int(">> "))
+elif line2 == "::/create/input":
+    input1_r = input(">> ")
+
+inputline2 = ["::/create/input/str", "::/create/input/int", "::/create/input"]
+input1_r = ""
+
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
     f = open(line4, "r")
@@ -252,6 +292,9 @@ if line3 not in line2argsforline3 and line3 == "::/file/read/name/line1":
     print("line3.error(cannot read file with name of start!)")
 elif line3 not in line2argsforline3 and line3 == "::/file/read/name/line3":
     print("line3.error(cannot read file with name of line3!)")
+elif line3 == "::/":
+    print("line3:File Stopped!")
+    exit()
 
 #file/write errors
 elif line3 not in line2argsforline3 and line3 == "::/file/write/runtime":
@@ -278,6 +321,23 @@ elif line3 == " ":
 elif line3 == "::/file/delete":
     print("line3.error(you can only execute this command on line2!)")
 
+#line3 if commands on input
+
+if line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
+    if input1_r == line4:
+        print("Alert!")
+if line3 == "::/if/input/content/line4/then/wow" and line2 in inputline2:
+    if input1_r == line4:
+        print("Wow!")
+if line3 == "::/if/input/content/line4/then/calm" and line2 in inputline2:
+    if input1_r == line4:
+        print("~Calm~")
+if line3 == "::/if/input/content/line4/then/1-10" and line2 in inputline2:
+    if input1_r == line4:
+        print("1-10")
+elif line3 == "::/if/input/content/line4/then/print/line5" and line2 in inputline2:
+    if input1_r == line4:
+        print("line3.error(cannot print)")
 
 #line4 commands
 if line4 not in line2argsforline4 and line4 == "::/file/read/name/line3":
@@ -292,6 +352,9 @@ if line4 not in line2argsforline4 and line4 == "::/file/read/name/line1":
     print("line4.error(cannot read file with name of start!)")
 elif line4 not in line2argsforline4 and line4 == "::/file/read/name/line4":
     print("line4.error(cannot read file with name of line4!)")
+elif line4 == "::/":
+    print("line4:File Stopped!")
+    exit()
 
 #file/write errors
 elif line4 not in line2argsforline4 and line4 == "::/file/write/runtime":
