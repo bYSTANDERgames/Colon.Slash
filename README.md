@@ -32,7 +32,7 @@ Delete File On Runtime
 
     ::/file/delete
    
-Add Variable
+Create Variable
 
     ::/create/variable/name/line_num/value/line_num
 
