@@ -72,12 +72,6 @@ Add Extension
 
     :/extension_extension_name
 
-Extension Examples
-
-    web_browser
-    check_spec
-    window
-
 # Libraries
 
     platform
