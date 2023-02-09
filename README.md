@@ -75,6 +75,7 @@ Add Extension
 Extension Examples
 
     web_browser
+    check_spec
 
 # Special Thanks to
 
