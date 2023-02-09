@@ -175,34 +175,34 @@ elif line2 == "::/create/variable/name/line4/value/line3" and line4 == " ":
 
 #line2 arithmatic 
 elif line2 == "::/arithmetic/+/number1/line3/number2/line4":
-    print(line3 + line4)
+    print(int(line3) + int(line4))
 elif line2 == "::/arithmetic/-/number1/line3/number2/line4":
-    print(line3 - line4)
+    print(int(line3) - int(line4))
 elif line2 == "::/arithmetic///number1/line3/number2/line4":
-    print(line3 / line4)
+    print(int(line3) / int(line4))
 elif line2 == "::/arithmetic/*/number1/line3/number2/line4":
-    print(line3 * line4)
+    print(int(line3) * int(line4))
 elif line2 == "::/arithmetic/%/number1/line3/number2/line4":
-    print(line3 % line4)
+    print(int(line3) % int(line4))
 elif line2 == "::/arithmetic/**/number1/line3/number2/line4":
-    print(line3 ** line4)
+    print(int(line3) ** int(line4))
 elif line2 == "::/arithmetic////number1/line3/number2/line4":
-    print(line3 // line4)
+    print(int(line3) // int(line4))
 
 elif line2 == "::/arithmetic/+/number1/line4/number2/line3":
-    print(line4 + line3)
+    print(int(line3) + int(line4))
 elif line2 == "::/arithmetic/-/number1/line4/number2/line3":
-    print(line4 - line3)
+    print(int(line3) - int(line4))
 elif line2 == "::/arithmetic///number1/line4/number2/line3":
-    print(line4 / line3)
+    print(int(line3) / int(line4))
 elif line2 == "::/arithmetic/*/number1/line4/number2/line3":
-    print(line4 * line3)
+    print(int(line3) * int(line4))
 elif line2 == "::/arithmetic/%/number1/line4/number2/line3":
-    print(line4 % line3)
+    print(int(line3) % int(line4))
 elif line2 == "::/arithmetic/**/number1/line4/number2/line3":
-    print(line4 ** line3)
+    print(int(line3) ** int(line4))
 elif line2 == "::/arithmetic////number1/line4/number2/line3":
-    print(line4 // line3)
+    print(int(line3) // int(line4))
 
 elif line2 == "::/arithmetic/+/number1/line3/number2/line4" and line3 == " ":
     print("line2.error(nothing in line3!)")
