@@ -80,3 +80,16 @@ Extension Examples
 # Special Thanks to
 
 Beta Tester : 𝒶𝓃𝒹𝓇𝑒𝓌#4939
+
+#Libraries
+
+    platform
+    socket
+    re
+    uuid
+    json
+    logging
+    time
+    webbrowser
+    datetime
+    os
