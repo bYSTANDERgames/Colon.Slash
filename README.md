@@ -77,11 +77,7 @@ Extension Examples
     web_browser
     check_spec
 
-# Special Thanks to
-
-Beta Tester : 𝒶𝓃𝒹𝓇𝑒𝓌#4939
-
-#Libraries
+# Libraries
 
     platform
     socket
@@ -93,3 +89,7 @@ Beta Tester : 𝒶𝓃𝒹𝓇𝑒𝓌#4939
     webbrowser
     datetime
     os
+
+# Special Thanks to
+
+Beta Tester : 𝒶𝓃𝒹𝓇𝑒𝓌#4939
