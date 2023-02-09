@@ -10,7 +10,7 @@ Start Command
 
     :/
 
-End Command 
+End Command / Trigger
 
     ::/
     
