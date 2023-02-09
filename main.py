@@ -349,6 +349,17 @@ def line2_f():
         w.pack()
         mainloop()
 
+    elif line2 == "::/print/line3":
+        print(line3)
+    elif line2 == "::/print/line4":
+        print(line4)
+
+    #error checking
+    elif line2 == "::/print/line2":
+        print("line2.error(cannot print itself)")
+    elif line2 == "::/print/line1":
+        print("line2.error(cannot print start)")
+
 def line3_f():
     #line3 commands
     if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
