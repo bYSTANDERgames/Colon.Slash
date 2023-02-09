@@ -307,6 +307,42 @@ if line2 == "::/extension/check_spec" and line1 == ":/extension_check_spec":
     print(f"Machine: {uname.machine}")
     print(f"Processor: {uname.processor}")
 
+#window extension
+elif line2 == "::/extension/window/create/checkbox/name/line3" and line1 == ":/extension_window": 
+    from tkinter import *
+    master = Tk()
+    var1 = IntVar()
+    Checkbutton(master, text=line3, variable=var1).grid(row=0, sticky=W)
+    mainloop()
+elif line2 == "::/extension/window/create/checkbox/name/line4" and line1 == ":/extension_window": 
+    from tkinter import *
+    master = Tk()
+    var1 = IntVar()
+    Checkbutton(master, text=line4, variable=var1).grid(row=0, sticky=W)
+    mainloop()
+
+elif line2 == "::/extension/window/create/editbox/name/line3" and line1 == ":/extension_window": 
+    from tkinter import *
+    master = Tk()
+    Label(master, text=line3).grid(row=0)
+    e1 = Entry(master)
+    e1.grid(row=0, column=1)
+    mainloop()
+elif line2 == "::/extension/window/create/editbox/name/line4" and line1 == ":/extension_window": 
+    from tkinter import *
+    master = Tk()
+    Label(master, text=line4).grid(row=0)
+    e1 = Entry(master)
+    e1.grid(row=0, column=1)
+    mainloop()
+
+elif line2 == "::/extension/window/create/spinbox" and line1 == ":/extension_window": 
+    from tkinter import *
+    master = Tk()
+    w = Spinbox(master, from_ = 0, to = 10)
+    w.pack()
+    mainloop()
+
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
     f = open(line4, "r")
