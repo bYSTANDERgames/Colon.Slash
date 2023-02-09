@@ -1,3 +1,5 @@
+import time
+
 print("""
    ___       _               __  _           _     
   / __\ ___ | | ___  _ __   / _\| | __ _ ___| |__  
@@ -269,10 +271,6 @@ elif line2 == "::/arithmetic////number1/line3/number2/line4" and line4 == " ":
     print("line2.error(nothing in line4!)")
 
 #line2 get input on runtime
-if line2 == "::/create/input/str":
-    input1_r = input(">> ")
-elif line2 == "::/create/input/int":
-    input1_r = input(int(">> "))
 elif line2 == "::/create/input":
     input1_r = input(">> ")
 
@@ -323,18 +321,42 @@ elif line3 == "::/file/delete":
 
 #line3 if commands on input
 
-if line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
+elif line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
     if input1_r == line4:
         print("Alert!")
-if line3 == "::/if/input/content/line4/then/wow" and line2 in inputline2:
+elif line3 == "::/if/input/content/line4/then/wow" and line2 in inputline2:
     if input1_r == line4:
         print("Wow!")
-if line3 == "::/if/input/content/line4/then/calm" and line2 in inputline2:
+elif line3 == "::/if/input/content/line4/then/calm" and line2 in inputline2:
     if input1_r == line4:
         print("~Calm~")
-if line3 == "::/if/input/content/line4/then/1-10" and line2 in inputline2:
-    if input1_r == line4:
-        print("1-10")
+elif line3 == "::/if/input/content/line4/then/datetimenowanddatetime" and line2 in inputline2:
+    from datetime import datetime
+
+    # datetime object containing current date and time
+    now = datetime.now()
+    
+    print("now =", now)
+
+    # dd/mm/YY H:M:S
+    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    print("date and time =", dt_string)
+
+elif line3 == "::/if/input/content/line4/then/datetimenow" and line2 in inputline2:
+    from datetime import datetime
+
+    # datetime object containing current date and time
+    now = datetime.now()
+    
+    print("now =", now)
+
+if line3 == "::/if/input/content/line4/then/datetime" and line2 in inputline2:
+    from datetime import datetime
+
+    # dd/mm/YY H:M:S
+    dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+    print("date and time =", dt_string)
+
 elif line3 == "::/if/input/content/line4/then/print/line5" and line2 in inputline2:
     if input1_r == line4:
         print("line3.error(cannot print)")
