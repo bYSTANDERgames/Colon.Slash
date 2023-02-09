@@ -294,6 +294,26 @@ if line2 == "::/extension/webbrowser/open/content/line3" and line1 != ":/extensi
 if line2 == "::/extension/webbrowser/open/content/line4" and line1 != ":/extension_web_browser":
     print("line2.error(import web_browser extension)")
 
+#check_spec extension
+if line2 == "::/extension/check_spec" and line1 == ":/extension_check_spec":
+    import platform,socket,re,uuid,json,logging
+
+    def getSystemInfo():
+        try:
+            info={}
+            info['platform']=platform.system()
+            info['platform-release']=platform.release()
+            info['platform-version']=platform.version()
+            info['architecture']=platform.machine()
+            info['hostname']=socket.gethostname()
+            info['ip-address']=socket.gethostbyname(socket.gethostname())
+            info['mac-address']=':'.join(re.findall('..', '%012x' % uuid.getnode()))
+            info['processor']=platform.processor()
+            return json.dumps(info)
+        except Exception as e:
+            logging.exception(e)
+
+json.loads(getSystemInfo())
 
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
