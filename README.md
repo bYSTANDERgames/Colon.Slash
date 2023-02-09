@@ -79,6 +79,7 @@ Add Extension
     webbrowser
     datetime
     os
+    playsound
 
 # Special Thanks to
 
