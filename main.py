@@ -1,4 +1,5 @@
 import time
+extensions = [":/extension_web_browser"]
 
 print("""
    ___       _               __  _           _     
@@ -42,9 +43,6 @@ elif line1 == "::/file/write/name/line1/content/line2":
    print("line1.error(file has not started yet!)")
 elif line1 == "::/file/write/name/line2/content/line1":
    print("line1.error(file has not started yet!)")
-
-else:
-    print("line1.Command Not Recognised")
 
 #line2 commands
 if line2 == "::/":
@@ -277,6 +275,26 @@ elif line2 == "::/create/input":
 inputline2 = ["::/create/input/str", "::/create/input/int", "::/create/input"]
 input1_r = ""
 
+#web_browser extension
+if line2 == "::/extension/webbrowser/open/content/line3" and line1 == ":/extension_web_browser":
+    import webbrowser
+    webbrowser.open(line3)
+if line2 == "::/extension/webbrowser/open/content/line4" and line1 == ":/extension_web_browser":
+    import webbrowser
+    webbrowser.open(line4)
+
+#checking error
+if line2 == "::/extension/webbrowser/open/content/line1" and line1 == ":/extension_web_browser":
+    print("line2.error(cant open url line1)")
+if line2 == "::/extension/webbrowser/open/content/line2" and line1 == ":/extension_web_browser":
+    print("line2.error(cant open url line2)")
+
+if line2 == "::/extension/webbrowser/open/content/line3" and line1 != ":/extension_web_browser":
+    print("line2.error(import web_browser extension)")
+if line2 == "::/extension/webbrowser/open/content/line4" and line1 != ":/extension_web_browser":
+    print("line2.error(import web_browser extension)")
+
+
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
     f = open(line4, "r")
@@ -320,7 +338,6 @@ elif line3 == "::/file/delete":
     print("line3.error(you can only execute this command on line2!)")
 
 #line3 if commands on input
-
 elif line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
     if input1_r == line4:
         print("Alert!")
@@ -402,3 +419,4 @@ elif line4 == " ":
     print("line4.did_not_execute")
 elif line4 == "::/file/delete":
     print("line4.error(you can only execute this command on line2!)")
+
