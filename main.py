@@ -173,6 +173,72 @@ elif line2 == "::/create/variable/name/line4/value/line3" and line3 == " ":
 elif line2 == "::/create/variable/name/line4/value/line3" and line4 == " ":
     print("line2.error(nothing in line4!)")
 
+#line2 arithmatic 
+elif line2 == "::/arithmetic/+/number1/line3/number2/line4":
+    print(line3 + line4)
+elif line2 == "::/arithmetic/-/number1/line3/number2/line4":
+    print(line3 - line4)
+elif line2 == "::/arithmetic///number1/line3/number2/line4":
+    print(line3 / line4)
+elif line2 == "::/arithmetic/*/number1/line3/number2/line4":
+    print(line3 * line4)
+elif line2 == "::/arithmetic/%/number1/line3/number2/line4":
+    print(line3 % line4)
+elif line2 == "::/arithmetic/**/number1/line3/number2/line4":
+    print(line3 ** line4)
+elif line2 == "::/arithmetic////number1/line3/number2/line4":
+    print(line3 // line4)
+
+elif line2 == "::/arithmetic/+/number1/line4/number2/line3":
+    print(line4 + line3)
+elif line2 == "::/arithmetic/-/number1/line4/number2/line3":
+    print(line4 - line3)
+elif line2 == "::/arithmetic///number1/line4/number2/line3":
+    print(line4 / line3)
+elif line2 == "::/arithmetic/*/number1/line4/number2/line3":
+    print(line4 * line3)
+elif line2 == "::/arithmetic/%/number1/line4/number2/line3":
+    print(line4 % line3)
+elif line2 == "::/arithmetic/**/number1/line4/number2/line3":
+    print(line4 ** line3)
+elif line2 == "::/arithmetic////number1/line4/number2/line3":
+    print(line4 // line3)
+
+elif line2 == "::/arithmetic/+/number1/line3/number2/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/arithmetic/+/number1/line3/number2/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+
+elif line2 == "::/arithmetic/-/number1/line3/number2/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/arithmetic/-/number1/line3/number2/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+
+elif line2 == "::/arithmetic///number1/line3/number2/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/arithmetic///number1/line3/number2/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+
+elif line2 == "::/arithmetic/*/number1/line3/number2/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/arithmetic/*/number1/line3/number2/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+
+elif line2 == "::/arithmetic/%/number1/line3/number2/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/arithmetic/%/number1/line3/number2/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+
+elif line2 == "::/arithmetic/**/number1/line3/number2/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/arithmetic/**/number1/line3/number2/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+
+elif line2 == "::/arithmetic////number1/line3/number2/line4" and line3 == " ":
+    print("line2.error(nothing in line3!)")
+elif line2 == "::/arithmetic////number1/line3/number2/line4" and line4 == " ":
+    print("line2.error(nothing in line4!)")
+
 #line3 commands
 if line3 not in line2argsforline3 and line3 == "::/file/read/name/line4":
     f = open(line4, "r")
