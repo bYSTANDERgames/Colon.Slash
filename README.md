@@ -68,6 +68,14 @@ Input Ifs
     ::/if/input/content/line4/then/datetimenow
     ::/if/input/content/line4/then/datetime
 
+Add Extension
+
+    :/extension_extension_name
+
+Extension Examples
+
+    web_browser
+
 # Special Thanks to
 
 Beta Tester : 𝒶𝓃𝒹𝓇𝑒𝓌#4939
