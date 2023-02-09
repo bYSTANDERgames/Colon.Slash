@@ -80,11 +80,6 @@ Extension Examples
 # Libraries
 
     platform
-    socket
-    re
-    uuid
-    json
-    logging
     time
     webbrowser
     datetime
