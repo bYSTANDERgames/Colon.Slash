@@ -76,6 +76,7 @@ Extension Examples
 
     web_browser
     check_spec
+    window
 
 # Libraries
 
