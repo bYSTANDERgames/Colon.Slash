@@ -36,6 +36,32 @@ Add Variable
 
     ::/create/variable/name/line_num/value/line_num
 
+Arithmetic Operations On RunTime
+
+    ::/arithmetic/Operator_Here
+    
+    Operator List :
+        +
+        -
+        /
+        *
+        %
+        **
+        //
+
+Arithmetic Operations
+
+    ::/arithmetic/Operator_Here/number1/line_num/number2/line_num
+    
+    Operator List :
+        +
+        -
+        /
+        *
+        %
+        **
+        //
+
 # Special Thanks to
 
 Beta Tester : 𝒶𝓃𝒹𝓇𝑒𝓌#4939
