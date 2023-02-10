@@ -359,6 +359,140 @@ def line2_f():
         print("line2.error(cannot print itself)")
     elif line2 == "::/print/line1":
         print("line2.error(cannot print start)")
+    
+    #line 2 while loop print
+    elif line2 == "::/count(1)/print/line3":
+        print(line3)
+    elif line2 == "::/count(2)/print/line3":
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(3)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(4)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(5)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(6)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(7)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(8)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(9)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line2 == "::/count(10)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+
+    #line 2 while loop print (2)
+    elif line2 == "::/count(1)/print/line4":
+        print(line4)
+    elif line2 == "::/count(2)/print/line4":
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(3)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(4)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(5)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(6)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(7)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(8)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(9)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line2 == "::/count(10)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
 
 def line3_f():
     #line3 commands
