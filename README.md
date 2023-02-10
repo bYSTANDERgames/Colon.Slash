@@ -20,7 +20,7 @@ Print a Line
    
 Loop Print
 
-    ::/count(num)/print/line_num
+    ::/count(num 1-10)/print/line_num
 
 File Write On RunTime
 
