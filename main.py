@@ -282,15 +282,7 @@ def line2_f():
         print("line2.error(nothing in line3!)")
     elif line2 == "::/arithmetic////number1/line3/number2/line4" and line4 == " ":
         print("line2.error(nothing in line4!)")
-    
-    global input1_r
-    #line2 get input on runtime
-    if line2 == "::/create/input":
-        input1_r = input(">> ")
 
-    global inputline2
-    inputline2 = ["::/create/input/str", "::/create/input/int", "::/create/input"]
-    input1_r = ""
 
     #web_browser extension
     if line2 == "::/extension/webbrowser/open/content/line3" and line1 == ":/extension_web_browser":
@@ -543,8 +535,16 @@ def line3_f():
     elif line3 == "::/file/delete":
         print("line3.error(you can only execute this command on line2!)")
 
+    #line2 get input on runtime
+    global input1_r
+    if line2 == "::/create/input":
+        input1_r = input("line2.input >> ")
+
+    global inputline2
+    inputline2 = ["::/create/input/str", "::/create/input/int", "::/create/input"]
+    
     #line3 if commands on input
-    elif line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
+    if line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
         if input1_r == line4:
             print("Alert!")
         else:
