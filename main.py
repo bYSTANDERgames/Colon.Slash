@@ -858,8 +858,13 @@ def line4_f():
     elif line4 == "::/count(10)/print/line4":
         print("line4.error(cannot print itself)")
 
-lines()
-line1_f()
-line2_f()
-line3_f()
-line4_f()
+def line_rr():
+    lines()
+    line1_f()
+    line2_f()
+    line3_f()
+    line4_f()
+
+line_rr()
+time.sleep(3)
+line_rr()
