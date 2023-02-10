@@ -2,7 +2,6 @@ import time
 from tkinter import *
 
 global line2argsforline3
-global input1_r
 global inputline2
 global line2argsforline4
 
@@ -283,9 +282,10 @@ def line2_f():
         print("line2.error(nothing in line3!)")
     elif line2 == "::/arithmetic////number1/line3/number2/line4" and line4 == " ":
         print("line2.error(nothing in line4!)")
-
+    
+    global input1_r
     #line2 get input on runtime
-    elif line2 == "::/create/input":
+    if line2 == "::/create/input":
         input1_r = input(">> ")
 
     global inputline2
