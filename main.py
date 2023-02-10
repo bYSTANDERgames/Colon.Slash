@@ -14,11 +14,15 @@ print("""
 \____/ \___/|_|\___/|_| |_(_)__/|_|\__,_|___/_| |_|
 
                                                    """) 
-
-line1 = input(">> ")
-line2 = input(">> ")
-line3 = input(">> ")
-line4 = input(">> ")
+def lines():
+    global line1
+    global line2
+    global line3
+    global line4
+    line1 = input(">> ")
+    line2 = input(">> ")
+    line3 = input(">> ")
+    line4 = input(">> ")
 
 def line1_f():
     #line1 commands
@@ -853,7 +857,10 @@ def line4_f():
     elif line4 == "::/count(10)/print/line4":
         print("line4.error(cannot print itself)")
 
+lines()
 line1_f()
 line2_f()
 line3_f()
 line4_f()
+time.sleep(3)
+lines()
