@@ -577,6 +577,128 @@ def line3_f():
     elif line3 == "::/if/input/content/line4/then/print/line5" and line2 in inputline2:
         if input1_r == line4:
             print("line3.error(cannot print)")
+
+    #error checking
+    elif line3 == "::/count(1)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(2)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(3)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(4)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(5)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(6)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(7)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(8)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(9)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+    elif line3 == "::/count(10)/print/line2":
+        print("line3.error(cannot print line with attribute main.line)")
+
+    elif line3 == "::/count(1)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(2)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(3)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(4)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(5)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(6)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(7)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(8)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(9)/print/line3":
+        print("line3.error(cannot print itself)")
+    elif line3 == "::/count(10)/print/line3":
+        print("line3.error(cannot print itself)")
+
+    #line 3 while loop print 
+    elif line3 == "::/count(1)/print/line4":
+        print(line4)
+    elif line3 == "::/count(2)/print/line4":
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(3)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(4)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(5)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(6)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(7)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(8)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(9)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    elif line3 == "::/count(10)/print/line4":
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+        print(line4)
+    
+    elif line2 == "::/print/line3":
+        print(line3)
+    elif line2 == "::/print/line4":
+        print(line4)
+
+    #error checking
+    elif line2 == "::/print/line2":
+        print("line2.error(cannot print itself)")
+    elif line2 == "::/print/line1":
+        print("line2.error(cannot print start)")
+
     
 
 def line4_f():
@@ -600,7 +722,6 @@ def line4_f():
     #file/write errors
     elif line4 not in line2argsforline4 and line4 == "::/file/write/runtime":
         print("line4.error(you can only execute this command on line2!)")
-
     elif line4 not in line2argsforline4 and line4 == "::/file/write/name/line1/content/line3":
         print("line4.error(you can only execute this command on line2!)")
     elif line4 not in line2argsforline4 and line4 == "::/file/write/name/line1/content/line4":
@@ -621,6 +742,116 @@ def line4_f():
         print("line4.did_not_execute")
     elif line4 == "::/file/delete":
         print("line4.error(you can only execute this command on line2!)")
+    
+    #line 4 while loop print
+    elif line4 == "::/count(1)/print/line3":
+        print(line3)
+    elif line4 == "::/count(2)/print/line3":
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(3)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(4)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(5)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(6)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(7)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(8)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(9)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+    elif line4 == "::/count(10)/print/line3":
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+        print(line3)
+
+    #error checking
+    elif line4 == "::/count(1)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(2)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(3)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(4)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(5)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(6)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(7)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(8)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(9)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+    elif line4 == "::/count(10)/print/line2":
+        print("line4.error(cannot print line with attribute main.line)")
+
+    elif line4 == "::/count(1)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(2)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(3)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(4)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(5)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(6)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(7)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(8)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(9)/print/line4":
+        print("line4.error(cannot print itself)")
+    elif line4 == "::/count(10)/print/line4":
+        print("line4.error(cannot print itself)")
 
 line1_f()
 line2_f()
