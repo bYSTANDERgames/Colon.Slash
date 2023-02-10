@@ -288,6 +288,7 @@ def line2_f():
     elif line2 == "::/create/input":
         input1_r = input(">> ")
 
+    global inputline2
     inputline2 = ["::/create/input/str", "::/create/input/int", "::/create/input"]
     input1_r = ""
 
@@ -552,6 +553,8 @@ def line3_f():
     elif line3 == "::/if/input/content/line4/then/calm" and line2 in inputline2:
         if input1_r == line4:
             print("~Calm~")
+    elif line3 == "::/if/input/content/line4/then/print/line2" and line2 in inputline2:
+        print("line3.error(cannot input content print line with attribute main.line)")
     elif line3 == "::/if/input/content/line4/then/datetimenowanddatetime" and line2 in inputline2:
         from datetime import datetime
 
@@ -581,7 +584,7 @@ def line3_f():
 
     elif line3 == "::/if/input/content/line4/then/print/line5" and line2 in inputline2:
         if input1_r == line4:
-            print("line3.error(cannot print)")
+            print("line3.error(cannot print line with attribute 𝟮𝟭𝟮/𝘀𝗱/')")
 
     #error checking
     elif line3 == "::/count(1)/print/line2":
