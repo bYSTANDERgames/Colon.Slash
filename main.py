@@ -547,44 +547,61 @@ def line3_f():
     elif line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
         if input1_r == line4:
             print("Alert!")
+        else:
+            print("line3.error(input not same)")
     elif line3 == "::/if/input/content/line4/then/wow" and line2 in inputline2:
         if input1_r == line4:
             print("Wow!")
+        else:
+            print("line3.error(input not same)")
     elif line3 == "::/if/input/content/line4/then/calm" and line2 in inputline2:
         if input1_r == line4:
             print("~Calm~")
+        else:
+            print("line3.error(input not same)")
     elif line3 == "::/if/input/content/line4/then/print/line2" and line2 in inputline2:
         print("line3.error(cannot input content print line with attribute main.line)")
     elif line3 == "::/if/input/content/line4/then/datetimenowanddatetime" and line2 in inputline2:
-        from datetime import datetime
+        if input1_r == line4:
+            from datetime import datetime
 
-        # datetime object containing current date and time
-        now = datetime.now()
-        
-        print("now =", now)
+            # datetime object containing current date and time
+            now = datetime.now()
+            
+            print("now =", now)
 
-        # dd/mm/YY H:M:S
-        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-        print("date and time =", dt_string)
+            # dd/mm/YY H:M:S
+            dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+            print("date and time =", dt_string)
+        else:
+            print("line3.error(input not same)")
 
     elif line3 == "::/if/input/content/line4/then/datetimenow" and line2 in inputline2:
-        from datetime import datetime
+        if input1_r == line4:
+            from datetime import datetime
 
-        # datetime object containing current date and time
-        now = datetime.now()
-        
-        print("now =", now)
+            # datetime object containing current date and time
+            now = datetime.now()
+            
+            print("now =", now)
+        else:
+            print("line3.error(input not same)")
 
     if line3 == "::/if/input/content/line4/then/datetime" and line2 in inputline2:
-        from datetime import datetime
+        if input1_r == line4:
+            from datetime import datetime
 
-        # dd/mm/YY H:M:S
-        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
-        print("date and time =", dt_string)
+            # dd/mm/YY H:M:S
+            dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
+            print("date and time =", dt_string)
+        else:
+            print("line3.error(input not same)")
 
     elif line3 == "::/if/input/content/line4/then/print/line5" and line2 in inputline2:
         if input1_r == line4:
             print("line3.error(cannot print line with attribute 𝟮𝟭𝟮/𝘀𝗱/')")
+        else:
+            print("line3.error(cant seem to find it)")
 
     #error checking
     elif line3 == "::/count(1)/print/line2":
