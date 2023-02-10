@@ -191,32 +191,32 @@ def line2_f():
 
     #line2 arithmatic 
     elif line2 == "::/arithmetic/+":
-        number1 = input(int("Number 1 : "))
-        number2 = input(int("Number 2 : "))
+        number1 = int(input("Number 1 : "))
+        number2 = int(input("Number 2 : "))
         print(number1+number2)
     elif line2 == "::/arithmetic/-":
-        number1 = input(int("Number 1 : "))
-        number2 = input(int("Number 2 : "))
+        number1 = int(input("Number 1 : "))
+        number2 = int(input("Number 2 : "))
         print(number1-number2)
     elif line2 == "::/arithmetic//":
-        number1 = input(int("Number 1 : "))
-        number2 = input(int("Number 2 : "))
+        number1 = int(input("Number 1 : "))
+        number2 = int(input("Number 2 : "))
         print(number1/number2)
     elif line2 == "::/arithmetic/*":
-        number1 = input(int("Number 1 : "))
-        number2 = input(int("Number 2 : "))
+        number1 = int(input("Number 1 : "))
+        number2 = int(input("Number 2 : "))
         print(number1*number2)
     elif line2 == "::/arithmetic/%":
-        number1 = input(int("Number 1 : "))
-        number2 = input(int("Number 2 : "))
+        number1 = int(input("Number 1 : "))
+        number2 = int(input("Number 2 : "))
         print(number1%number2)
     elif line2 == "::/arithmetic/**":
-        number1 = input(int("Number 1 : "))
-        number2 = input(int("Number 2 : "))
+        number1 = int(input("Number 1 : "))
+        number2 = int(input("Number 2 : "))
         print(number1**number2)
     elif line2 == "::/arithmetic///":
-        number1 = input(int("Number 1 : "))
-        number2 = input(int("Number 2 : "))
+        number1 = int(input("Number 1 : "))
+        number2 = int(input("Number 2 : "))
         print(number1//number2)
 
     elif line2 == "::/arithmetic/+/number1/line3/number2/line4":
