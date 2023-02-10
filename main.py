@@ -6,7 +6,8 @@ global input1_r
 global inputline2
 global line2argsforline4
 
-print("""
+def lines():
+    print("""
    ___       _               __  _           _     
   / __\ ___ | | ___  _ __   / _\| | __ _ ___| |__  
  / /   / _ \| |/ _ \| '_ \  \ \ | |/ _` / __| '_ \ 
@@ -14,7 +15,7 @@ print("""
 \____/ \___/|_|\___/|_| |_(_)__/|_|\__,_|___/_| |_|
 
                                                    """) 
-def lines():
+    
     global line1
     global line2
     global line3
