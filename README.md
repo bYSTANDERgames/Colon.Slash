@@ -17,7 +17,11 @@ End Command / Trigger
 Print a Line
 
     ::/print/line_num
-    
+   
+Loop Print
+
+    ::/count(num)/print/line_num
+
 File Write On RunTime
 
     ::/file/write/runtime
