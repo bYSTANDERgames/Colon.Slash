@@ -1,5 +1,5 @@
 # Colon.Slash
-A Language I made over Python. You Only have Four Lines, Code whatever you want!.
+A Language I made over Python. You Only have Four Lines, Code whatever you want!. btw sorry for my bad code
 
 ! Warning : Alot of Bugs
 
