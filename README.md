@@ -22,6 +22,10 @@ Loop Print
 
     ::/count(num 1-10)/print/line_num
 
+Custom Count Loop Print
+
+    ::/count/line_num/print/line_num
+
 File Write On RunTime
 
     ::/file/write/runtime
