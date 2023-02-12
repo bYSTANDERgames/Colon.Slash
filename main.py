@@ -542,6 +542,14 @@ def line3_f():
 
     global inputline2
     inputline2 = ["::/create/input/str", "::/create/input/int", "::/create/input"]
+
+    #line2 custom while loops two lines
+    if line2 == "::/count/line3/print/line4":
+        for i in range(int(line3)):
+            print(line4)
+    if line2 == "::/count/line4/print/line3":
+        for i in range(int(line4)):
+            print(line3)
     
     #line3 if commands on input
     if line3 == "::/if/input/content/line4/then/alert" and line2 in inputline2:
