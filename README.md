@@ -5,7 +5,7 @@ A Language I made over Python. You Only have Four Lines, Code whatever you want!
 
 If File says nothing that means there is error in your code
 
-#Starting Info
+# Starting Info
 
 line1 - starting cannot be using in commands whatsoever, but can be used to import extensions
 line2 - main line for commands
