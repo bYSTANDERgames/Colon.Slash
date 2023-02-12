@@ -305,7 +305,7 @@ def line2_f():
 
     if line2 == "::/extension/webbrowser/open/content/line3" and line1 != ":/extension_web_browser":
         print("line2.error(please import the webbrowser extension before using this command)")
-        
+
     if line2 == "::/extension/webbrowser/open/content/line4" and line1 != ":/extension_web_browser":
         print("line2.error(please import the webbrowser extension before using this command)")
 
@@ -383,16 +383,16 @@ def line2_f():
 
     elif line2 == "::/extension/random/print/number/max/line3/min/line4" and line1 == ":/extension_random": 
         import random
-        print(random.randint(line3, line4))
+        print(random.randint(int(line3), int(line4)))
     elif line2 == "::/extension/random/print/number/max/line4/min/line3" and line1 == ":/extension_random": 
         import random
-        print(random.randint(line4, line3))
+        print(random.randint(int(line4), int(line3)))
     elif line2 == "::/extension/random/print/number/min/line3/max/line4" and line1 == ":/extension_random": 
         import random
-        print(random.randint(line3, line4))
+        print(random.randint(int(line3), int(line4)))
     elif line2 == "::/extension/random/print/number/min/line4/max/line3" and line1 == ":/extension_random": 
         import random
-        print(random.randint(line4, line3))
+        print(random.randint(int(line4), int(line3)))
     
     #error checking
     if line2 == "::/extension/random/print/lines/line3/line4" and line1 != ":/extension_random": 
