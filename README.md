@@ -58,7 +58,24 @@ Create Variable
 
     ::/create/variable/name/line_num/value/line_num
 
-Arithmetic :
+Get Input on Runtime
+
+    ::/create/input
+
+Input Ifs
+
+    ::/if/input/content/line4/then/alert
+    ::/if/input/content/line4/then/wow
+    ::/if/input/content/line4/then/calm
+    ::/if/input/content/line4/then/datetimenowanddatetime
+    ::/if/input/content/line4/then/datetimenow
+    ::/if/input/content/line4/then/datetime
+
+Add Extension
+
+    :/extension_extension_name
+
+# Arithmetic :
 
     Operator List :
         +  Plus
@@ -77,22 +94,6 @@ Arithmetic Operations
 
     ::/arithmetic/Operator_Here/number1/line_num/number2/line_num
     
-Get Input on Runtime
-
-    ::/create/input
-
-Input Ifs
-
-    ::/if/input/content/line4/then/alert
-    ::/if/input/content/line4/then/wow
-    ::/if/input/content/line4/then/calm
-    ::/if/input/content/line4/then/datetimenowanddatetime
-    ::/if/input/content/line4/then/datetimenow
-    ::/if/input/content/line4/then/datetime
-
-Add Extension
-
-    :/extension_extension_name
 
 # Libraries
 
