@@ -303,6 +303,12 @@ def line2_f():
     if line2 == "::/extension/webbrowser/open/content/line4" and line1 != ":/extension_web_browser":
         print("line2.error(import web_browser extension)")
 
+    if line2 == "::/extension/webbrowser/open/content/line3" and line1 != ":/extension_web_browser":
+        print("line2.error(please import the webbrowser extension before using this command)")
+        
+    if line2 == "::/extension/webbrowser/open/content/line4" and line1 != ":/extension_web_browser":
+        print("line2.error(please import the webbrowser extension before using this command)")
+
     #check_spec extension
     if line2 == "::/extension/check_spec" and line1 == ":/extension_check_spec":
         import platform
@@ -315,6 +321,10 @@ def line2_f():
         print(f"Version: {uname.version}")
         print(f"Machine: {uname.machine}")
         print(f"Processor: {uname.processor}")
+    
+    #error checking
+    if line2 == "::/extension/check_spec" and line1 != ":/extension_check_spec":
+        print("line2.error(please import the check_spec extension before using this command)")
 
     #window extension
     elif line2 == "::/extension/window/create/checkbox/name/line3" and line1 == ":/extension_window": 
@@ -346,6 +356,58 @@ def line2_f():
         w = Spinbox(master, from_ = 0, to = 10)
         w.pack()
         mainloop()
+    
+    #error checking
+    elif line2 == "::/extension/window/create/checkbox/name/line3" and line1 != ":/extension_window": 
+        print("line2.error(please import the window extension before using this command)")
+    elif line2 == "::/extension/window/create/checkbox/name/line4" and line1 != ":/extension_window": 
+        print("line2.error(please import the window extension before using this command)")
+
+    elif line2 == "::/extension/window/create/editbox/name/line3" and line1 != ":/extension_window": 
+        print("line2.error(please import the window extension before using this command)")
+    elif line2 == "::/extension/window/create/editbox/name/line4" and line1 != ":/extension_window": 
+        print("line2.error(please import the window extension before using this command)")
+
+    elif line2 == "::/extension/window/create/spinbox" and line1 == ":/extension_window": 
+        print("line2.error(please import the window extension before using this command)")
+    
+    #random extension
+    elif line2 == "::/extension/random/print/lines/line3/line4" and line1 == ":/extension_random": 
+        randomarray = [line3, line4]
+        import random
+        print(random.choice(randomarray))
+    elif line2 == "::/extension/random/print/lines/line4/line3" and line1 == ":/extension_random": 
+        randomarray = [line3, line4]
+        import random
+        print(random.choice(randomarray))
+
+    elif line2 == "::/extension/random/print/number/max/line3/min/line4" and line1 == ":/extension_random": 
+        import random
+        print(random.randint(line3, line4))
+    elif line2 == "::/extension/random/print/number/max/line4/min/line3" and line1 == ":/extension_random": 
+        import random
+        print(random.randint(line4, line3))
+    elif line2 == "::/extension/random/print/number/min/line3/max/line4" and line1 == ":/extension_random": 
+        import random
+        print(random.randint(line3, line4))
+    elif line2 == "::/extension/random/print/number/min/line4/max/line3" and line1 == ":/extension_random": 
+        import random
+        print(random.randint(line4, line3))
+    
+    #error checking
+    if line2 == "::/extension/random/print/lines/line3/line4" and line1 != ":/extension_random": 
+        print("line2.error(please import the random extension before using this command)")
+    elif line2 == "::/extension/random/print/lines/line4/line3" and line1 != ":/extension_random": 
+        print("line2.error(please import the random extension before using this command)")
+
+    elif line2 == "::/extension/random/print/number/max/line3/min/line4" and line1 != ":/extension_random": 
+        print("line2.error(please import the random extension before using this command)")
+    elif line2 == "::/extension/random/print/number/max/line4/min/line3" and line1 != ":/extension_random": 
+        print("line2.error(please import the random extension before using this command)")
+    elif line2 == "::/extension/random/print/number/min/line3/max/line4" and line1 != ":/extension_random": 
+        print("line2.error(please import the random extension before using this command)")
+    elif line2 == "::/extension/random/print/number/min/line4/max/line3" and line1 != ":/extension_random": 
+        print("line2.error(please import the random extension before using this command)")
 
     elif line2 == "::/print/line3":
         print(line3)
