@@ -5,6 +5,8 @@ A Language I made over Python. You Only have Four Lines, Code whatever you want!
 
 If File says nothing that means there is error in your code
 
+[Colon Slash Icon](https://user-images.githubusercontent.com/71819797/218321703-250083c7-f380-4da0-b167-e9f7d3b72a71.png)
+
 # Starting Info
 
 line1 - starting cannot be using in commands whatsoever, but can be used to import extensions
@@ -110,7 +112,3 @@ Beta Tester : 𝒶𝓃𝒹𝓇𝑒𝓌#4939
 Beta Tester : _-Vertigo-_#0698
 
 Beat Tester : aun.ali_2k#8732!
-
-
-[Colon Slash](https://user-images.githubusercontent.com/71819797/218321703-250083c7-f380-4da0-b167-e9f7d3b72a71.png)
-
