@@ -8,8 +8,11 @@ If File says nothing that means there is error in your code
 # Starting Info
 
 line1 - starting cannot be using in commands whatsoever, but can be used to import extensions
+
 line2 - main line for commands
+
 line3 - secondary
+
 line4 - secondary
 
 # Commands:
