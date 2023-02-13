@@ -33,7 +33,9 @@ def line1_f():
     elif line1 == "::/":
         print("line1:File Stopped!")
         exit()
-    elif line1 == "help":
+    
+    helpcof = ['help', "HELP", "Help", "HeLp", "hElP", "hElp", "heLp", "helP"]
+    if line1 in helpcof:
         print("https://github.com/bYSTANDERgames/Colon.Slash/blob/main/README.md")
 
     #line1 error checking
